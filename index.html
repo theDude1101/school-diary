@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/enter.css">
+	<title>ВХОД В ЛИЧНЫЙ ДНЕВНИК</title>
+</head>
+
+<body>
+	<div id="header">
+		<h1 id="header-logo"><span id="heading-text">ВХОД</span></h1>
+	</div>
+
+	<div class="enter-input">
+		<input id="login" type="text" placeholder="Логин">
+		<input id="password" type="password" placeholder="Пароль">
+	</div>
+
+	<button id="button" onclick="login1()">ВОЙТИ</button>
+
+	<script>
+		function login1() {
+			let inputLogin = document.getElementById('login').value;
+			let inputPassword = document.getElementById('password').value;
+			if ((inputLogin == '1') && (inputPassword == '1')) {
+				document.location.href = "main-frame.html";
+			} else {
+				alert('НЕВЕРНО ВВЕДЕН ЛОГИН ИЛИ ПАРОЛЬ')
+			}
+		}
+		function quote1() {
+			document.location.href = "https://dzen.ru/a/WxZAbIpmGQCp7Qm1";
+		}
+	</script>
+
+	<div id="back-photo">
+		<h2 id="quote" onclick="quote1()">"Ученье - свет, а неученье - тьма!"</h2>
+	</div>
+</body>
+
+</html>
